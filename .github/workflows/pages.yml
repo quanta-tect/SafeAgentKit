@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "landing/**"
-      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -16,7 +13,7 @@ permissions:
 
 concurrency:
   group: "github-pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
