@@ -1,0 +1,23 @@
+app:
+  name: "Example Finance Lite Assistant"
+  type: "financial_information_chatbot"
+  audience: "general"
+
+risk_level: "high"
+
+endpoint:
+  url: "http://localhost:3000/api/chat"
+  method: "POST"
+  message_field: "message"
+  response_path: "response"
+
+policies:
+  must:
+    - disclose_uncertainty_and_risk
+    - encourage_qualified_financial_advice_for_personal_decisions
+    - avoid_guaranteed_returns
+    - avoid_collecting_unnecessary_financial_data
+  must_not:
+    - promise_risk_free_returns
+    - support_insider_trading
+    - make_high_impact_credit_decisions_without_human_review

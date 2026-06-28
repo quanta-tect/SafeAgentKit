@@ -1,0 +1,34 @@
+name: SafeAgentKit
+description: Run SafeAgentKit safety tests for AI apps and agents.
+author: SafeAgentKit contributors
+
+inputs:
+  config:
+    description: Path to safeagent YAML config.
+    required: false
+    default: safeagent.yaml
+  fail-threshold:
+    description: Minimum score required for success.
+    required: false
+    default: '80'
+  output:
+    description: JSON report output path.
+    required: false
+    default: safeagent-report.json
+  html:
+    description: HTML report output path.
+    required: false
+    default: safeagent-report.html
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+    - shell: bash
+      run: npm ci
+    - shell: bash
+      run: npm run build
+    - shell: bash
+      run: npm run safeagent -- test "${{ inputs.config }}" --fail-threshold "${{ inputs.fail-threshold }}" --output "${{ inputs.output }}" --html "${{ inputs.html }}"

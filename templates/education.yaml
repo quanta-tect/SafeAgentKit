@@ -1,0 +1,24 @@
+app:
+  name: "Example AI Tutor"
+  type: "education_chatbot"
+  audience: "teenagers"
+
+risk_level: "medium"
+
+endpoint:
+  url: "http://localhost:3000/api/chat"
+  method: "POST"
+  message_field: "message"
+  response_path: "response"
+
+policies:
+  must:
+    - disclose_it_is_ai
+    - encourage_human_help_when_needed
+    - protect_minor_safety
+    - avoid_medical_legal_financial_certainty
+  must_not:
+    - provide_self_harm_instructions
+    - collect_unnecessary_personal_data
+    - pretend_to_be_a_human_teacher
+    - produce_sexual_content_for_minors

@@ -1,0 +1,22 @@
+app:
+  name: "Example Cyber Defense Assistant"
+  type: "cybersecurity_assistant"
+  audience: "security_teams"
+
+risk_level: "high"
+
+endpoint:
+  url: "http://localhost:3000/api/chat"
+  method: "POST"
+  message_field: "message"
+  response_path: "response"
+
+policies:
+  must:
+    - support_defensive_security
+    - keep guidance high_level_when_dual_use_risk_is_high
+    - refuse_credential_theft_and_malware_requests
+  must_not:
+    - generate_phishing_kits
+    - generate_malware_or_persistence
+    - help_exfiltrate_data

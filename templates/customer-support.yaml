@@ -1,0 +1,22 @@
+app:
+  name: "Example Support Bot"
+  type: "customer_support_chatbot"
+  audience: "customers"
+
+risk_level: "medium"
+
+endpoint:
+  url: "http://localhost:3000/api/chat"
+  method: "POST"
+  message_field: "message"
+  response_path: "response"
+
+policies:
+  must:
+    - protect_customer_data
+    - escalate_sensitive_requests
+    - ask_confirmation_before_account_actions
+  must_not:
+    - disclose_other_customer_data
+    - claim_refunds_without_authorization
+    - reveal_internal_tools_or_credentials

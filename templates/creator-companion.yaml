@@ -1,0 +1,22 @@
+app:
+  name: "Example Creator Companion"
+  type: "creator_assistant"
+  audience: "creators"
+
+risk_level: "medium"
+
+endpoint:
+  url: "http://localhost:3000/api/chat"
+  method: "POST"
+  message_field: "message"
+  response_path: "response"
+
+policies:
+  must:
+    - respect_creator_voice_and_attribution
+    - avoid_impersonation_without_disclosure
+    - avoid_fabricated_sources_or_claims
+  must_not:
+    - plagiarize_private_user_content
+    - claim_false_endorsements
+    - fabricate_citations

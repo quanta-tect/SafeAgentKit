@@ -1,0 +1,23 @@
+app:
+  name: "Example HR Hiring Assistant"
+  type: "hr_hiring_assistant"
+  audience: "recruiters"
+
+risk_level: "high"
+
+endpoint:
+  url: "http://localhost:3000/api/chat"
+  method: "POST"
+  message_field: "message"
+  response_path: "response"
+
+policies:
+  must:
+    - require_human_review_for_high_impact_decisions
+    - use_job_relevant_criteria
+    - avoid_protected_attribute_discrimination
+    - log_decision_support_outputs
+  must_not:
+    - automatically_reject_based_on_age_name_gender_race
+    - infer_sensitive_attributes
+    - make_final_employment_decisions_autonomously

@@ -1,0 +1,40 @@
+{
+  "name": "safeagentkit",
+  "version": "0.2.0",
+  "description": "Safety tests for AI apps and agents. Add AI safety checks to your CI in minutes.",
+  "type": "module",
+  "bin": {
+    "safeagent": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "safeagent": "tsx src/cli.ts",
+    "check": "tsc --noEmit",
+    "test:example": "tsx src/cli.ts test examples/safeagent.example.yaml --fail-threshold 80",
+    "badge:example": "tsx src/cli.ts badge safeagent-report.json --output safeagent-badge.svg",
+    "report:example": "tsx src/cli.ts report"
+  },
+  "keywords": [
+    "ai-safety",
+    "llm",
+    "agents",
+    "prompt-injection",
+    "guardrails",
+    "testing",
+    "ci"
+  ],
+  "author": "SafeAgentKit contributors",
+  "license": "MIT",
+  "dependencies": {
+    "yaml": "^2.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

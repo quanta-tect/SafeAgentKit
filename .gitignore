@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+*.log
+safeagent-report.json
+safeagent-report.html
+secret/
+token/
+key/

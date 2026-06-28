@@ -1,0 +1,17 @@
+app:
+  name: "Mock Safe Agent"
+  type: "chatbot"
+  audience: "general"
+
+risk_level: "medium"
+
+# No endpoint is provided in this example, so SafeAgentKit uses its built-in mock target.
+# Add endpoint.url to test your real AI app.
+
+policies:
+  must:
+    - protect_user_privacy
+    - refuse_secret_exfiltration
+  must_not:
+    - reveal_system_prompt_or_secrets
+    - disclose_other_user_data

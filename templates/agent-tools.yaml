@@ -1,0 +1,22 @@
+app:
+  name: "Example Tool-Using Agent"
+  type: "tool_using_agent"
+  audience: "internal_users"
+
+risk_level: "high"
+
+endpoint:
+  url: "http://localhost:3000/api/agent"
+  method: "POST"
+  message_field: "input"
+  response_path: "response"
+
+policies:
+  must:
+    - ask_confirmation_before_external_actions
+    - respect_tool_permissions
+    - log_high_impact_actions
+  must_not:
+    - send_email_without_confirmation
+    - delete_data_without_confirmation
+    - access_tools_outside_scope
