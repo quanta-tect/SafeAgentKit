@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0
+- Public launch polish
+- GitHub discovery metadata guidance
+- README badges
+- npm publish guide
+- Dependabot configuration
+- Code of conduct
+
 ## 0.3.0
 - Launch readiness
 - npm package metadata

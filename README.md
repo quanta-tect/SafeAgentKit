@@ -4,6 +4,13 @@
 
 SafeAgentKit is an open-source TypeScript/Node.js CLI that helps developers catch prompt injection, privacy leaks, unsafe advice, hallucination risks, and unauthorized agent actions before production.
 
+![CI](https://github.com/quanta-tect/SafeAgentKit/actions/workflows/ci.yml/badge.svg)
+![Pages](https://github.com/quanta-tect/SafeAgentKit/actions/workflows/pages.yml/badge.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Version](https://img.shields.io/badge/version-0.4.0-blue.svg)
+
+Live site: https://quanta-tect.github.io/SafeAgentKit/
+
 > Make AI safety testing feel like normal unit testing.
 
 ```bash
@@ -42,6 +49,18 @@ Coming soon once the package is published to npm.
 
 - Live page: https://quanta-tect.github.io/SafeAgentKit/
 - Launch plan: docs/LAUNCH.md
+
+## Project status
+
+SafeAgentKit is in early public alpha. The CLI works, reports work, and templates are available. The evaluation engine is currently rule-based. LLM-as-judge and hosted dashboard are planned.
+
+## GitHub Action status
+
+The included `action.yml` is experimental. For now, the recommended CI setup is to run SafeAgentKit directly in your workflow after installing dependencies.
+
+## Before npm publish
+
+See [docs/NPM_PUBLISH.md](docs/NPM_PUBLISH.md) for the publish checklist and commands.
 
 ## Who should use this
 

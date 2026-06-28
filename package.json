@@ -1,7 +1,7 @@
 {
   "name": "safeagentkit",
-  "version": "0.3.0",
-  "description": "Safety tests for AI apps and agents. Add AI safety checks to your CI in minutes.",
+  "version": "0.4.0",
+  "description": "Safety tests for AI apps and agents. Catch prompt injection, privacy leaks, unsafe advice, and unauthorized tool actions before production.",
   "type": "module",
   "homepage": "https://quanta-tect.github.io/SafeAgentKit/",
   "repository": {
@@ -35,12 +35,22 @@
   },
   "keywords": [
     "ai-safety",
+    "ai-agent",
+    "ai-agents",
     "llm",
+    "llm-security",
+    "llm-testing",
     "agents",
     "prompt-injection",
     "guardrails",
     "testing",
-    "ci"
+    "ci",
+    "red-team",
+    "redteaming",
+    "ai-governance",
+    "agent-security",
+    "privacy",
+    "typescript"
   ],
   "author": "SafeAgentKit contributors",
   "license": "MIT",
