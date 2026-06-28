@@ -1,0 +1,22 @@
+name: Feature request
+about: Suggest a new feature or test pattern
+title: ''
+labels: enhancement
+assignees: ''
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the feature
+      description: A clear description of the feature or new test pattern.
+      placeholder: Describe the feature.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Why is this useful?
+      description: The problem this solves or a use case.
+    validations:
+      required: true

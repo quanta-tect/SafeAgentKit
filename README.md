@@ -14,6 +14,49 @@ safeagent report
 
 ![SafeAgentKit score](./safeagent-badge.svg)
 
+## Try the demo server
+
+See a minimal Node.js target you can test immediately:
+
+```bash
+node examples/demo-server/server.mjs
+```
+
+Test it with SafeAgentKit:
+
+```bash
+npm run safeagent -- test examples/demo-server/safeagent.yaml --fail-threshold 80
+```
+
+See `examples/demo-server/README.md` for details.
+
+## Install globally after npm publish
+
+Coming soon once the package is published to npm.
+
+## Use with npx after npm publish
+
+Coming soon once the package is published to npm.
+
+## Landing page
+
+- Live page: https://quanta-tect.github.io/SafeAgentKit/
+- Launch plan: docs/LAUNCH.md
+
+## Who should use this
+
+- Teams building chatbots and AI agents in production.
+- Developers adding CI checks for safety, privacy, and policy compliance.
+- Open-source maintainers who want a simple safety gate before releases.
+- Security and QA teams evaluating AI product risk.
+
+## What SafeAgentKit does not do
+
+- It does not guarantee safety or compliance.
+- It does not replace human review.
+- It does not legalize testing on systems you do not own.
+- It does not operate an LLM-as-judge evaluator yet (planned).
+
 ## Why this exists
 
 AI apps are moving from **generate text** to **do things**: read emails, call APIs, update CRMs, run tools, and make decisions. That means safety cannot be a one-time checklist. It needs to be repeatable, reviewable, and CI-friendly.

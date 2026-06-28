@@ -1,8 +1,24 @@
 {
   "name": "safeagentkit",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Safety tests for AI apps and agents. Add AI safety checks to your CI in minutes.",
   "type": "module",
+  "homepage": "https://quanta-tect.github.io/SafeAgentKit/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quanta-tect/SafeAgentKit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/quanta-tect/SafeAgentKit/issues"
+  },
+  "files": [
+    "dist",
+    "templates",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "action.yml"
+  ],
   "bin": {
     "safeagent": "dist/cli.js"
   },
@@ -13,7 +29,9 @@
     "check": "tsc --noEmit",
     "test:example": "tsx src/cli.ts test examples/safeagent.example.yaml --fail-threshold 80",
     "badge:example": "tsx src/cli.ts badge safeagent-report.json --output safeagent-badge.svg",
-    "report:example": "tsx src/cli.ts report"
+    "report:example": "tsx src/cli.ts report",
+    "prepack": "npm run build",
+    "pack:dry": "npm pack --dry-run"
   },
   "keywords": [
     "ai-safety",

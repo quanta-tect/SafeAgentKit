@@ -1,0 +1,28 @@
+name: Policy test request
+about: Request a new built-in safety test or policy template
+title: ''
+labels: enhancement
+assignees: ''
+
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario
+      description: Describe the scenario and why it matters.
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: prompt_injection, privacy_leak, unsafe_advice, tool_action, or other
+    validations:
+      required: true
+  - type: input
+    id: severity
+    attributes:
+      label: Severity
+      description: low, medium, high, or critical
+    validations:
+      required: true
