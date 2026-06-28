@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { loadConfig } from './config.js';
 import { runSuite } from './runner.js';
 import { loadJsonReport, saveHtmlReport, saveJsonReport } from './reporter.js';
 
-const VERSION = '0.2.0';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const VERSION = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8')).version;
 
 interface ParsedArgs {
   command?: string;

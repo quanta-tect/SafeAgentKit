@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0
+- npm publish preparation
+- global install validation
+- package runtime fixes
+- dynamic CLI version from package.json
+
 ## 0.4.0
 - Public launch polish
 - GitHub discovery metadata guidance
