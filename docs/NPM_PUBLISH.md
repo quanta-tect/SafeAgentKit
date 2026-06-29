@@ -37,6 +37,13 @@ npm deprecate safeagentkit@<version> "Critical issue found. Please upgrade."
 
 Then publish a patched version.
 
+## Published package
+
+- npm: https://www.npmjs.com/package/safeagentkit
+- Current published version: 0.5.0
+
+For future releases, bump the package version before publishing.
+
 ## Important
 
 Do not publish if tests fail or if any secret material may be bundled.

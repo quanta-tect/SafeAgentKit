@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+- Updated documentation after npm publish
+- Added npm install instructions
+- Added npx usage instructions
+- Updated roadmap to mark npm publishing complete
+
 ## 0.5.0
 - npm publish preparation
 - global install validation

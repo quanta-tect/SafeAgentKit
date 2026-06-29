@@ -10,6 +10,7 @@ SafeAgentKit is an open-source TypeScript/Node.js CLI that helps developers catc
 ![Version](https://img.shields.io/badge/version-0.5.0-blue.svg)
 
 Live site: https://quanta-tect.github.io/SafeAgentKit/
+npm package: https://www.npmjs.com/package/safeagentkit
 
 > Make AI safety testing feel like normal unit testing.
 
@@ -43,6 +44,13 @@ See `examples/demo-server/README.md` for details.
 npm install -g safeagentkit
 safeagent help
 safeagent version
+```
+
+## Use with npx
+
+```bash
+npx --package safeagentkit safeagent help
+npx --package safeagentkit safeagent init
 ```
 
 ## Landing page
@@ -90,6 +98,16 @@ SafeAgentKit gives you:
 - Score thresholds for CI/CD
 - A generated SVG safety badge
 - Policy templates for common AI app categories
+
+## Quick start from npm
+
+```bash
+npm install -g safeagentkit
+mkdir my-ai-safety-check
+cd my-ai-safety-check
+safeagent init
+safeagent test safeagent.yaml --no-fail
+```
 
 ## Quick start
 
@@ -163,7 +181,7 @@ safeagent badge [json-report] [--output safeagent-badge.svg]
 safeagent help
 ```
 
-In this repo before npm publishing, use:
+When working from source, use:
 
 ```bash
 npm run safeagent -- test examples/safeagent.example.yaml
@@ -309,7 +327,7 @@ It is static HTML/CSS and can be deployed to GitHub Pages, Vercel, Netlify, Clou
 - [x] GitHub Actions workflow example
 - [x] Policy templates
 - [ ] Optional LLM-as-judge evaluator
-- [ ] npm package publishing
+- [x] npm package publishing
 - [ ] Web dashboard
 - [ ] Scheduled tests
 - [ ] Public hosted safety badge
