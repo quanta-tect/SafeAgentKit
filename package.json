@@ -1,6 +1,6 @@
 {
   "name": "safeagentkit",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Safety tests for AI apps and agents. Catch prompt injection, privacy leaks, unsafe advice, and unauthorized tool actions before production.",
   "type": "module",
   "homepage": "https://quanta-tect.github.io/SafeAgentKit/",

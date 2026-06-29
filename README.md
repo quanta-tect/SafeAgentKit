@@ -37,13 +37,13 @@ npm run safeagent -- test examples/demo-server/safeagent.yaml --fail-threshold 8
 
 See `examples/demo-server/README.md` for details.
 
-## Install globally after npm publish
+## Install globally
 
-Coming soon once the package is published to npm.
-
-## Use with npx after npm publish
-
-Coming soon once the package is published to npm.
+```bash
+npm install -g safeagentkit
+safeagent help
+safeagent version
+```
 
 ## Landing page
 
