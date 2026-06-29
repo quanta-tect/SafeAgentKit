@@ -7,7 +7,7 @@ SafeAgentKit is an open-source TypeScript/Node.js CLI that helps developers catc
 ![CI](https://github.com/quanta-tect/SafeAgentKit/actions/workflows/ci.yml/badge.svg)
 ![Pages](https://github.com/quanta-tect/SafeAgentKit/actions/workflows/pages.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-0.5.0-blue.svg)
+![Version](https://img.shields.io/badge/version-0.5.1-blue.svg)
 
 Live site: https://quanta-tect.github.io/SafeAgentKit/
 npm package: https://www.npmjs.com/package/safeagentkit

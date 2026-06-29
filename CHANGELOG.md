@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.5.1
 - Updated documentation after npm publish
 - Added npm install instructions
 - Added npx usage instructions
