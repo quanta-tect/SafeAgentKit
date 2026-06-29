@@ -14,6 +14,10 @@
 - Open-source AI projects
 - Dev teams adding AI features to existing SaaS
 
+## Launch assets
+
+See `docs/LAUNCH_KIT/README.md` for copy, posts, and outreach templates.
+
 ## Launch channels
 
 1. GitHub repo
